@@ -7,7 +7,7 @@ public class MainChallenge {
 
         int finalScore = score;
 
-        calculateScore();
+        calculateScore(true, 800, levelCompleted, bonus );
 
         if (gameOver == true) {
             finalScore += (levelCompleted * bonus);
@@ -38,12 +38,7 @@ public class MainChallenge {
         }
     }
 
-    public static void calculateScore() {
-        boolean gameOver = true;
-        int score = 1800;
-        int levelCompleted = 15;
-        int bonus = 1100;
-
+    public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         int finalScore = score;
 
         if (gameOver) {
